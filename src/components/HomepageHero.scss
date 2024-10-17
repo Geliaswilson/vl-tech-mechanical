@@ -1,0 +1,22 @@
+@use "../styles/partials/breakpoints" as *;
+@use "../styles/partials/variables" as *;
+.hero {
+    display:flex;
+  background-color: blue;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  height: 25rem;
+  &__text {
+    align-self:center;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    @include tablet {
+      padding-left: 15rem;
+    }
+  }
+  &__button {
+    min-width: 10rem;
+    min-height: 3rem;
+    border-radius: 2rem;
+  }
+}
