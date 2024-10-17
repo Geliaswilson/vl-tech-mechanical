@@ -1,0 +1,68 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/typography" as *;
+@use "../../styles/partials/global" as *;
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1.5rem 3%;
+  background-color: $Charcoal-gray;
+  align-items: center;
+
+  &__img {
+    width: 5%;
+    height: 5%;
+    margin-right: auto;
+  }
+
+  &__nav {
+    padding-right: 8rem;
+    font-size: 1.5rem;
+  }
+
+  &__nav-ul {
+    display: flex;
+    gap: 2rem;
+  }
+
+  &__nav-li {
+    list-style: none;
+  }
+  &__link {
+    text-decoration: none;
+    color: $Brass-gold;
+    position: relative;
+    &:hover,
+    &:focus {
+      color: $Rustic-copper;
+    }
+    &::after {
+      content: "";
+      height: 3px;
+      width: 100%;
+      background-color: $Slate-blue;
+      position: absolute;
+      left: 0px;
+      bottom: -6px;
+      opacity: 0;
+      transition: all 0.4s;
+      pointer-events: none;
+    }
+    &:hover::after,
+    &:focus::after {
+      opacity: 1;
+    }
+  }
+  &__button {
+    padding: 1.25rem 2rem;
+    font-size: 1.5rem;
+    color: $Ivory-white;
+    background-color: $Rustic-copper;
+    border-radius: 12px;
+    
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
