@@ -1,0 +1,60 @@
+@use "variables" as *;
+
+// Bebas Neue - Heading Font 
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap') format('woff2');
+    font-weight: $regular;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap') format('woff2');
+    font-weight: $bold;
+    font-style: normal;
+}
+
+// Merriweather - Body Font 
+@font-face {
+    font-family: 'Merriweather';
+    src: url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400&display=swap') format('woff2');
+    font-weight: $regular;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    src: url('https://fonts.googleapis.com/css2?family=Merriweather:wght@600&display=swap') format('woff2');
+    font-weight: $demi;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    src: url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap') format('woff2');
+    font-weight: $bold;
+    font-style: normal;
+}
+
+// Lato - Call-to-Action Font 
+@font-face {
+    font-family: 'Lato';
+    src: url('https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap') format('woff2');
+    font-weight: $regular;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('https://fonts.googleapis.com/css2?family=Lato:wght@600&display=swap') format('woff2');
+    font-weight: $demi;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap') format('woff2');
+    font-weight: $bold;
+    font-style: normal;
+}
