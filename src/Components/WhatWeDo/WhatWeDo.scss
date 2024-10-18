@@ -1,0 +1,57 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/typography" as *;
+@use "../../styles/partials/global" as *;
+
+.Services {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  &__heading {
+    text-align: center;
+    background-color: $Charcoal-gray;
+    padding: 2.5rem 0;
+    font-size: 2.5rem;
+    color: $Ivory-white;
+  }
+
+  &__container {
+    display: flex;
+    margin: 0 auto;
+  }
+
+  &__container-card {
+    display: flex;
+    margin-top: 3rem;
+    gap: 15rem;
+  }
+
+  &__container-img {
+
+  }
+
+  &__icon {
+    width: 4rem;
+    height: 4rem;
+    background-color: $Brass-gold;
+    padding: 1.25rem;
+    border-radius: 40%;
+  }
+
+  &__content {
+  }
+
+  &__container-action {
+  }
+
+  &__action {
+    padding-bottom: 2rem;
+    font-size: 2rem;
+    color: $Brass-gold;
+  }
+
+  &__outlined {
+  }
+
+  &__service {
+  }
+}
