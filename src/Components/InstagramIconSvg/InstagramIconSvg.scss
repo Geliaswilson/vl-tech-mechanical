@@ -1,0 +1,9 @@
+@use "../../styles/partials/breakpoints" as *;
+@use "../../styles/partials/typography" as *;
+@use "../../styles/partials/global" as *;
+@use "../../styles/partials/variables" as *;
+.instagram-icon{
+    width:30px;
+    height:30px;
+    fill:$Rustic-copper;
+}
