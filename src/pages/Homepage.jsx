@@ -1,5 +1,5 @@
 import HomepageHero from "../components/HomepageHero";
-import Header from "./Components/Header/Header";
+import Header from "../components/Header/Header";
 const Homepage = () => {
     return (
         <>
