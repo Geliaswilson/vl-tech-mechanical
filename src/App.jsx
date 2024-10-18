@@ -1,5 +1,3 @@
-import WhatWeDo from "./Components/WhatWeDo/WhatWeDo"
-
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.scss";
 import Homepage from "./pages/Homepage";
@@ -13,7 +11,6 @@ function App() {
     <Header />
      <Routes>
       <Route path="/" element={<Homepage />}/>
-      <Route path="/" element={<WhatWeDo />}/>
      </Routes>
      <Footer />
      </BrowserRouter>
