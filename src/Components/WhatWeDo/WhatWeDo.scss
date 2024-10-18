@@ -1,0 +1,77 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/typography" as *;
+@use "../../styles/partials/global" as *;
+
+.Services {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 3rem;
+
+  &__heading {
+    text-align: center;
+    background-color: $Charcoal-gray;
+    padding: 2rem 0;
+    font-size: 2.5rem;
+    color: $Ivory-white;
+    width: 100%;
+  }
+
+  &__container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  &__container-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 2rem;
+    padding-top: 3rem;
+  }
+
+  &__container-img {
+    flex-shrink: 0;
+  }
+
+  &__icon {
+    width: 5rem;
+    height: 5rem;
+    background-color: $Brass-gold;
+    padding: 1rem;
+    border-radius: 25%;
+  }
+
+  &__content {
+    flex-grow: 1;
+    text-align: left;
+    max-width: 60%;
+  }
+
+  &__action {
+    font-size: 2rem;
+    color: $Brass-gold;
+    margin-bottom: 1rem;
+  }
+
+  &__service-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 1rem 2rem;
+    padding-left: 1.2rem;
+  }
+
+  &__service {
+    font-size: 1.35rem;
+    color: $Slate-blue;
+    line-height: 1.75;
+  }
+}
