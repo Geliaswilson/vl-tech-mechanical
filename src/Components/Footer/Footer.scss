@@ -19,6 +19,9 @@
     font-family: "Bebas Neue";
   }
   &__company-name{
+    &:hover{
+        cursor:pointer;
+    }
     font-family: "Bebas Neue";
     font-weight: $bold;
     font-size:2rem;

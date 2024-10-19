@@ -1,0 +1,25 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/typography" as *;
+@use "../../styles/partials/global" as *;
+.service-cards{
+    height:90vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    &__title{
+font-family: 'Bebas Neue';
+margin-top:2rem;
+    }
+    &__cards-list{
+        display:flex;
+        list-style-type:none;
+        justify-content:space-evenly;
+        margin-top:2rem;
+        margin-bottom:2rem;
+    }
+    &__list-item{
+        max-width:17%;
+        border-radius:10px;
+            box-shadow:0 5px 9px -1px rgba(0,0,0,0.25);
+    }
+}
