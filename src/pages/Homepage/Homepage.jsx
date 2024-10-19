@@ -1,9 +1,10 @@
+import './Homepage.scss';
 import HomepageHero from "../../Components/HomepageHero/HomepageHero";
 import WhatWeDo from "../../Components/WhatWeDo/WhatWeDo";
 const Homepage = () => {
     return (
         <>
-        <main>
+        <main className="homepage">
         <HomepageHero />
         <WhatWeDo />
         </main>

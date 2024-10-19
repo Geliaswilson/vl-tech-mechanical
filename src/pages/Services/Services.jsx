@@ -1,8 +1,9 @@
+import './Services.scss';
 import ServicesCards from "../../Components/ServicesCards/ServicesCards";
 const Services = () => {
     return (
         <>
-        <main>
+        <main className="services">
             <ServicesCards />
         </main>
         </>
