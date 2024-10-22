@@ -1,10 +1,13 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./Footer.scss";
-import instagramIcon from "../../assets/icons/instagram-svgrepo-com.svg";
 import InstagramIconSvg from "../InstagramIconSvg/InstagramIconSvg";
 const Footer = () => {
   const Callto = ({ phone, children }) => {
     return <a href={`tel:${phone}`}>{children}</a>;
+  };
+  const navigate = useNavigate();
+  const handleLogoNav = () => {
+    navigate("/");
   };
   return (
     <>
@@ -15,7 +18,9 @@ const Footer = () => {
             <Callto phone="718-207-6179">718-207-6179</Callto>
           </p>
         </section>
-        <p className="footer__company-name"> VL Tech Mechanical</p>
+        <p className="footer__company-name" onClick={handleLogoNav}>
+          VL Tech Mechanical
+        </p>
         <section className="footer__follow-us-section">
           <h2 className="footer__follow-us">Follow Us</h2>
           <div className="footer__icons-container">
