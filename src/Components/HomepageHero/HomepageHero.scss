@@ -6,37 +6,16 @@
 .hero {
   display: flex;
   justify-content: center;
+  align-items:center;
   background-image: url("../../assets/images/hero-image.jpeg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   width: 100%;
   height: 25rem;
-  &__text {
-    font-family: "Merriweather";
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    padding: 1rem;
-    background-color: rgb(201, 169, 91, 0.95);
-    color: $Charcoal-gray;
-    box-shadow: 10px 10px 10px $Charcoal-gray;
-    border-radius: 2rem;
-    align-self: center;
-  }
-  &__company {
-    font-weight: $bold;
-  }
-  &__button {
-    font-family: "Merriweather";
-    font-weight: $demi;
-    font-size: 1rem;
-    min-width: 10rem;
-    min-height: 3rem;
-    border-style: none;
-    border-radius: 2rem;
-    background-color: $Slate-blue;
-    color: $Brass-gold;
+  &__img{
+    aspect-ratio: 4 / 3;
+    height: 200px;
+    box-shadow: 15px 15px 10px $Slate-blue, -15px -15px 10px $Taupe-beige;
   }
 }

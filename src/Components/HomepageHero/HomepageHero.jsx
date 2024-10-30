@@ -3,12 +3,11 @@ const HomepageHero = () => {
   return (
     <>
       <section className="hero">
-        <div className="hero__text">
-          <h2 className="hero__company">VL Tech</h2>
-          <p className="hero__time">24/7 Services</p>
-          <p className="hero__services">Plumbing, Sewage</p>
-          <button className="hero__button">Free Quote</button>
-        </div>
+      <img
+        className="hero__img"
+        src="src/assets/icons/Screenshot 2024-10-17 at 6.45.34 PM.png"
+        alt=""
+      />
       </section>
     </>
   );
