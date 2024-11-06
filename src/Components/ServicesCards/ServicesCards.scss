@@ -1,37 +1,38 @@
 @use "../../styles/partials/variables" as *;
 @use "../../styles/partials/typography" as *;
 @use "../../styles/partials/global" as *;
-.service-cards{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    &__title{
-font-family: 'Bebas Neue';
-margin-top:2rem;
-    }
-    &__cards-list{
-        display:flex;
-        list-style-type:none;
-        justify-content:space-evenly;
-        margin-top:2rem;
-        margin-bottom:2rem;
-    }
-    &__list-item{
-        max-width:17%;
-        border-radius:10px;
-            box-shadow:0 5px 9px -1px rgba(0,0,0,0.25);
-    }
-    &__service-name{
-        font-family:'Bebas Neue';
-        font-size:20px;
-        padding:1rem;
-    }
-    &__service-description{
-        font-family:'Merriweather';
-        font-size:15px;
-padding-left:1rem;
-padding-right:1rem;
-padding-bottom:1rem;
-
-    }
+.service-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__title {
+    font-family: "Bebas Neue";
+    margin-top: 2rem;
+  }
+  &__cards-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  &__list-item {
+    max-width: 17%;
+    border-radius: 10px;
+    box-shadow: 0 5px 9px -1px rgba(0, 0, 0, 0.25);
+  }
+  &__service-name {
+    font-family: "Bebas Neue";
+    font-size: 20px;
+    padding: 1rem;
+  }
+  &__service-description {
+    font-family: "Merriweather";
+    font-size: 15px;
+    word-wrap:break-word;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+  }
 }
