@@ -1,8 +1,5 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# VL Tech Mechanical
+## Professional Plumbing Services in the Queens Area
+This is a website designed for VL Tech Mechanical, a plumbing service located in Queens, New York.
+The site provides a centralized point of information and contact for VL Tech's services.
+It is currently nearing its MVP stage, with updates to come afterwards.
