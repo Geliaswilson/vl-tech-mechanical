@@ -1,6 +1,7 @@
 @use "../../styles/partials/variables" as *;
 @use "../../styles/partials/typography" as *;
 @use "../../styles/partials/global" as *;
+@use "../../styles/partials/breakpoints" as *;
 .service-cards {
   display: flex;
   flex-direction: column;
@@ -8,9 +9,15 @@
   &__title {
     font-family: "Bebas Neue";
     margin-top: 2rem;
+    font-size:2rem;
+    color:$Charcoal-gray;
+    @include desktop{
+      font-size:4rem;
+    }
   }
   &__cards-list {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     list-style-type: none;
     justify-content: space-evenly;
@@ -18,21 +25,121 @@
     margin-bottom: 2rem;
   }
   &__list-item {
-    max-width: 17%;
+    max-width: 35%;
+    height: fit-content;
+    margin: 1rem;
     border-radius: 10px;
     box-shadow: 0 5px 9px -1px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    @include tablet{
+      width:45%;
+    }
+  }
+  &__actual-leak-name{
+    display:inline-block;
+    height:90%;
+    width:90%;
+    background-image: url("../../assets/icons/pipe-svgrepo-com.svg");
+    background-repeat:no-repeat;
+    background-position: center;
+    text-shadow:2px 2px 5px $Charcoal-gray;
+  }
+  &__actual-toilet-name{
+    background-image: url("../../assets/icons/toilet-svgrepo-com.svg");
+    background-repeat:no-repeat;
+    background-position: center;
+    text-shadow:2px 2px 5px $Charcoal-gray;
+    display:inline-block;
+    height:90%;
+    width:90%;
+  }
+  &__actual-water-name{
+    background-image: url("../../assets/icons/water-heater-svgrepo-com (1).svg");
+    background-repeat:no-repeat;
+    background-position: center;
+    text-shadow:2px 2px 5px $Charcoal-gray;
+    display:inline-block;
+    height:90%;
+    width:90%;
+  }
+  &__actual-pipe-name{
+    background-image: url("../../assets/icons/plumbing-pipe-svgrepo-com.svg");
+    background-repeat:no-repeat;
+    background-position: center;
+    text-shadow:2px 2px 5px $Charcoal-gray;
+    display:inline-block;
+    height:90%;
+    width:90%;
+  }
+  &__actual-drain-name{
+    background-image: url("../../assets/icons/pipe-svgrepo-com (1).svg");
+    background-repeat:no-repeat;
+    background-position: center;
+    text-shadow:2px 2px 5px $Charcoal-gray;
+    display:inline-block;
+    height:90%;
+    width:90%;
   }
   &__service-name {
+    height: 7rem;
     font-family: "Bebas Neue";
     font-size: 20px;
     padding: 1rem;
+    color: $Ivory-white;
+    background-color: $Brass-gold;
+    border-color:$Ivory-white;
+    border-radius: 12px;
+    @include tablet{
+      font-size: 30px;
+      padding:1.5rem;
+    }
+    
   }
   &__service-description {
     font-family: "Merriweather";
-    font-size: 15px;
-    word-wrap:break-word;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-bottom: 1rem;
+    font-size: 13px;
+    font-weight: $bold;
+    line-height: 25px;
+    word-wrap: normal;
+    padding: 1rem;
+    color:$Charcoal-gray;
+    @include tablet {
+      font-size: 20px;
+      line-height: 35px;
+    }
   }
+}
+.full-size-modal {
+  position: absolute;
+  width: 80%;
+  top: 40%;
+  left: 10%;
+  border-radius: 10px;
+  box-shadow: 0 5px 9px -1px rgba(0, 0, 0, 0.25);
+  background-color: $Taupe-beige;
+  @include tablet {
+    top:20%;
+  }
+}
+.close-button {
+  :hover {
+    cursor: pointer;
+  }
+  width: 1rem;
+  margin: 0.5rem;
+  background-color: $Taupe-beige;
+  border-style: none;
+}
+.ReactModal__Overlay {
+  opacity: 0;
+  transition: opacity 1000ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open{
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close{
+  opacity: 0;
 }
