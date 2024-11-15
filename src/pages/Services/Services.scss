@@ -1,6 +1,10 @@
 @use "../../styles/partials/variables" as *;
 @use "../../styles/partials/typography" as *;
 @use "../../styles/partials/global" as *;
+body{
+    padding-left:10px;
+    padding-right:10px;
+}
 .services{
     padding-bottom:98px;
 }
