@@ -1,6 +1,5 @@
 import "./ServicesCards.scss";
 import closeButton from "../../assets/icons/close-circle-svgrepo-com.svg"
-import faucetImage from "../../assets/icons/faucet-water-svgrepo-com.svg"
 import Modal from "react-modal";
 import { useState } from "react";
 
@@ -32,7 +31,7 @@ const ServicesCards = () => {
               className="service-cards__service-name"
               onClick={openLeakModal}
             >
-              <p className="service-cards__actual-name">Leak Detection</p>
+              <p className="service-cards__actual-leak-name">Leak Detection</p>
             </button>
           </li>
           <li className="service-cards__list-item">
@@ -40,7 +39,7 @@ const ServicesCards = () => {
               className="service-cards__service-name"
               onClick={openToiletModal}
             >
-              Toilet Repair
+              <p className="service-cards__actual-toilet-name">Toilet Repair</p>
             </button>
           </li>
           <li className="service-cards__list-item">
@@ -48,7 +47,7 @@ const ServicesCards = () => {
               className="service-cards__service-name"
               onClick={openWaterHeaterModal}
             >
-              Water Heater Repair
+              <p className="service-cards__actual-water-name">Water Heater Repair</p>
             </button>
           </li>
           <li className="service-cards__list-item">
@@ -56,7 +55,7 @@ const ServicesCards = () => {
               className="service-cards__service-name"
               onClick={openPipeModal}
             >
-              Pipe Repair
+              <p className="service-cards__actual-pipe-name">Pipe Repair</p>
             </button>
           </li>
           <li className="service-cards__list-item">
@@ -64,7 +63,7 @@ const ServicesCards = () => {
               className="service-cards__service-name"
               onClick={openDrainModal}
             >
-              Drain Cleaning
+              <p className="service-cards__actual-drain-name">Drain Cleaning</p>
             </button>
           </li>
         </ul>
